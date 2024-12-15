@@ -3,7 +3,7 @@
     "cookie": "Cookie",
     "cookie-tips": "需要 QR 代码令牌和 cookie 中的一个",
     "limit_rate": "限制速率",
-    "limit_rate-tips": "限制所有 api 请求速率(1r/[limit_rate]s)",
+    "limit_rate-tips": "限制所有 api 请求率 ([limit]r/1s)",
     "page_size": "分页大小",
     "page_size-tips": "115 驱动程序的列表 API 的每页大小",
     "qrcode_source": "Qrcode 源",
@@ -69,6 +69,8 @@
   "139Yun": {
     "authorization": "Authorization",
     "cloud_id": "Cloud id",
+    "custom_upload_part_size": "自定义上传分片大小",
+    "custom_upload_part_size-tips": "0 表示根据VIP等级对应大小",
     "root_folder_id": "根文件夹ID",
     "type": "类型",
     "types": {
@@ -245,10 +247,8 @@
   },
   "BaiduPhoto": {
     "album_id": "相簿ID",
-    "client_id": "客户端ID",
-    "client_secret": "客户端密钥",
+    "cookie": "Cookie",
     "delete_origin": "删除源文件",
-    "refresh_token": "刷新令牌",
     "show_type": "展示类型",
     "show_types": {
       "root": "根",
@@ -349,6 +349,26 @@
     "password": "密码",
     "root_folder_path": "根文件夹路径",
     "username": "用户名"
+  },
+  "FebBox": {
+    "client_id": "客户端ID",
+    "client_secret": "客户端密钥",
+    "page_size": "分页大小",
+    "page_size-tips": "list api per page size of FebBox driver",
+    "root_folder_id": "根文件夹ID",
+    "sort_rule": "排序规则",
+    "sort_rules": {
+      "ext_asc": "扩展名正序",
+      "ext_desc": "扩展名倒序",
+      "name_asc": "名称升序",
+      "name_desc": "名称降序",
+      "size_asc": "大小升序",
+      "size_desc": "大小降序",
+      "update_asc": "修改时间正序",
+      "update_desc": "修改时间倒序"
+    },
+    "user_ip": "用户ip",
+    "user_ip-tips": "用户IP地址用于下载链接，可以加快下载"
   },
   "FeijiPan": {
     "password": "密码",
@@ -547,7 +567,6 @@
   },
   "PikPak": {
     "captcha_token": "验证码",
-    "custom_low_latency_address": "",
     "device_id": "设备id",
     "disable_media_link": "禁用媒体链接",
     "password": "密码",
@@ -558,17 +577,10 @@
       "web": "网页"
     },
     "refresh_token": "刷新令牌",
-    "refresh_token_method": "刷新令牌方法",
-    "refresh_token_methods": {
-      "http": "Http",
-      "oauth2": "Oauth2"
-    },
     "root_folder_id": "根文件夹ID",
-    "use_low_latency_address": "使用加速地址",
     "username": "用户名"
   },
   "PikPakShare": {
-    "custom_low_latency_address": "自定义加速地址",
     "device_id": "设备id",
     "platform": "平台",
     "platforms": {
@@ -579,7 +591,6 @@
     "root_folder_id": "根文件夹ID",
     "share_id": "分享ID",
     "share_pwd": "分享密码",
-    "use_low_latency_address": "使用加速地址",
     "use_transcoding_address": "使用转码地址"
   },
   "Quark": {
@@ -998,6 +1009,7 @@
     "Doge": {},
     "Dropbox": {},
     "FTP": {},
+    "FebBox": {},
     "FeijiPan": {},
     "GoogleDrive": {},
     "GooglePhoto": {},
@@ -1071,6 +1083,7 @@
     "Doge": "多吉云",
     "Dropbox": "Dropbox",
     "FTP": "FTP",
+    "FebBox": "FebBox",
     "FeijiPan": "飞机盘",
     "GoogleDrive": "谷歌云盘",
     "GooglePhoto": "谷歌相册",
